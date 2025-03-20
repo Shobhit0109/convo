@@ -1,0 +1,25 @@
+[project]
+name = "ai"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Shobhit0109",email = "shobhit.ug21@nsut.ac.in"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "test", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.0"
+isort = "^6.0.1"
+pylint = "^3.3.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

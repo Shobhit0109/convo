@@ -1,0 +1,3 @@
+[tools]
+"npm:@angular/cli" = "latest"
+yarn = "latest"
